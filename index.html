@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amir-Abbas Alvand | CS Student & ML Enthusiast</title>
+    <style>
+        :root {
+            --primary-color: #55E100;
+            --secondary-color: #1a1a1a;
+            --text-color: #e0e0e0;
+            --header-color: #ffffff;
+            --card-bg-color: #2a2a2a;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #111;
+        }
+        header h1 {
+            font-size: 3em;
+            color: var(--header-color);
+            margin: 0;
+        }
+        header .typing-img {
+            margin-top: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+            color: var(--primary-color);
+        }
+        .social-links a {
+            color: var(--header-color);
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+        section {
+            padding: 60px 20px;
+            border-bottom: 1px solid #333;
+        }
+        h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: var(--header-color);
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+        .card {
+            background: var(--card-bg-color);
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: var(--header-color);
+            font-size: 1.5em;
+        }
+        .card .date {
+            color: #aaa;
+            font-style: italic;
+        }
+        .card p {
+            margin: 10px 0 0;
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .skill-tag {
+            background-color: var(--card-bg-color);
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            color: var(--text-color);
+        }
+        #contact {
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #111;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #fff;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Amir-Abbas Alvand</h1>
+        <div class="typing-img">
+             <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=FFFFFF&center=true&vCenter=true&width=435&lines=Computer+Science+Student;Machine+Learning+Enthusiast;Data+Explorer" alt="Typing SVG" />
+        </div>
+        <p>"Code is poetry written in logic."</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/amir-abbas-alvand-22656b204/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/amiralv82" target="_blank">GitHub</a> |
+            <a href="https://t.me/Amir_Alvand" target="_blank">Telegram</a>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 20px;">
+                I am a final-year Computer Science student at Amirkabir University of Technology with a deep passion for Artificial Intelligence. My journey in tech is driven by a love for solving complex problems, whether it's by exploring classical ML algorithms or architecting modern neural networks. I am passionate about mathematics, clean code, and transforming data into compelling stories.
+            </p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="card">
+                <h3>Machine Learning Engineer (Intern)</h3>
+                <p><strong>MECO (MAPNA Electric & Control)</strong></p>
+                <p class="date">Fall 2023</p>
+                <ul>
+                    <li>Developed a Persian voice assistant for smart homes using NLP classification models.</li>
+                    <li>Built a custom dataset and trained models for intent recognition.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Research Assistant</h3>
+                <p><strong>Amirkabir University of Technology</strong></p>
+                <p class="date">2024 - Ongoing</p>
+                <ul>
+                    <li>Predicting Cancer Y based on Cancer X using bioinformatics and machine learning under the supervision of Dr. Fatemeh Shakeri.</li>
+                    <li>Conducting data preprocessing, model selection, and feature engineering.</li>
+                </ul>
+            </div>
+             <div class="card">
+                <h3>Head Manager - Halghe Magazine</h3>
+                <p><strong>Amirkabir University of Technology</strong></p>
+                <p class="date">2023 - Ongoing</p>
+                <ul>
+                    <li>Managing editorial content and publication strategies for the Persian Student Scientific Magazine.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="card">
+                <h3>Grep Implementation in Rust</h3>
+                <p class="date">Fall 2023</p>
+                <p>Developed a high-performance implementation of the Linux 'grep' command using Rust, focusing on efficiency and performance optimization.</p>
+            </div>
+            <div class="card">
+                <h3>Kakuro Solver</h3>
+                <p class="date">Fall 2023</p>
+                <p>Solved complex Kakuro puzzles by implementing constraint satisfaction and meta-heuristic algorithms in Python.</p>
+            </div>
+            <div class="card">
+                <h3>Credit Card Fraud Detection</h3>
+                <p class="date">Fall 2023</p>
+                <p>Implemented K-Means and SVM algorithms to detect fraudulent transactions from a large Kaggle dataset.</p>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education & Coursework</h2>
+            <div class="card">
+                <h3>Amirkabir University of Technology</h3>
+                <p><strong>Bachelor in Computer Science</strong> (2021 - Ongoing)</p>
+                <p>Current GPA: 3.8/4</p>
+                <p><strong>Key Coursework:</strong> Artificial Intelligence (20/20), Data Mining (19.93/20), Database (19.75/20), Image Processing (19.83/20), Data Structures & Algorithms (19.7/20).</p>
+            </div>
+             <div class="card">
+                <h3>Graduate Level Courses</h3>
+                <p>Machine Learning Specialization (Stanford University, Online) & CS50 (Harvard University, Online)</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">C/C++</span>
+                <span class="skill-tag">Rust</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">NLP</span>
+                <span class="skill-tag">Data Mining</span>
+                <span class="skill-tag">Scikit-learn</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">TensorFlow/PyTorch</span>
+                <span class="skill-tag">Linux</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">SQL</span>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>I'm always open to discussing new projects, research, or opportunities. Feel free to reach out!</p>
+            <a href="mailto:amir.alvand96@yahoo.com" class="button">Email Me</a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Amir-Abbas Alvand. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
